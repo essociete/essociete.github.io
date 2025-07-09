@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>essociete</title>
+  <style>
+    :root {
+      --bg-color: #111;
+      --text-color: #eee;
+      --accent-color: #ED904F;
+      --link-color: #004b45;
+    }
+
+    @font-face {
+      font-family: 'JetBrains Mono';
+      src: url('fonts/JetBrainsMono-Regular.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 16px;
+      margin: 0;
+      line-height: 1.6;
+
+      background-image:
+        linear-gradient(rgba(79, 237, 223, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(79, 237, 223, 0.05) 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+
+    header,
+    footer {
+      padding: 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      color: var(--accent-color);
+      font-size: 2rem;
+    }
+
+    /*
+    .ascii-logo {
+        font-family: monospace;
+        font-size: 0.8rem;
+        line-height: 1.35;
+        color: var(--text-color);
+        white-space: pre;
+        margin: 0;
+        text-shadow: 0 0 10px var(--text-color);
+    }*/
+
+    .logo-container {
+      padding-top: 1rem;
+      padding-bottom: 0.3rem;
+    }
+
+    .logo-container img {
+      width: 90vw;
+      /* Mobilde geniş, kenarlarda boşluk */
+      max-width: 600px;
+      /* Çok büyük ekranlarda sınır */
+      height: auto;
+      image-rendering: pixelated;
+      display: block;
+      margin: 0 auto;
+      /* Ortala */
+    }
+
+    @media (min-width: 768px) {
+      .logo-container img {
+        width: 40vw;
+        /* Tablet ve masaüstünde daha dar */
+      }
+    }
+
+
+
+    nav {
+      max-width: 800px;
+      background: var(--accent-color);
+      display: flex;
+      margin: auto;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0.5rem;
+    }
+
+    nav a {
+      color: var(--bg-color);
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: var(--link-color);
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 800px;
+      margin: auto;
+      padding: 1.5rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      color: var(--accent-color);
+      border-bottom: 1px solid var(--accent-color);
+      padding-bottom: 0.3rem;
+    }
+
+    ul {
+      list-style: square;
+      padding-left: 1.2rem;
+    }
+
+    footer {
+      font-size: 0.9rem;
+      color: #999;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+
+      main {
+        margin: 1rem;
+        border-radius: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <!--
+    <pre class="ascii-logo">
+                                             oo            dP            
+                                                           88            
+.d8888b. .d8888b. .d8888b. .d8888b. .d8888b. dP .d8888b. d8888P .d8888b. 
+88ooood8 Y8ooooo. Y8ooooo. 88'  `88 88'  `"" 88 88ooood8   88   88ooood8 
+88.  ...       88       88 88.  .88 88.  ... 88 88.  ...   88   88.  ... 
+`88888P' `88888P' `88888P' `88888P' `88888P' dP `88888P'   dP   `88888P' 
+<span style="color: #ED904F; text-shadow: 0 0 10px #ED904F;">ooooooooooooooooo</span> oooooooooooooooooooooooooooooooooooooooooooooooooooooo
+    </pre>
+  -->
+    <div class="logo-container">
+      <img src="logo.png" alt="ASCII Logo">
+  </header>
+  <nav>
+    <a href="#about">Hakkında</a>
+    <a href="#events">Etkinlikler</a>
+    <a href="#contact">İletişim</a>
+    <a hreg="#images">Resimler</a>
+    <a href="#music">Müzik</a>
+  </nav>
+  <main>
+    <section id="about">
+      <h2>Biz Kimiz?</h2>
+      <p>
+        Essociete adında eskişehir merkezli hackerspace projesi yürütmeye çalışan bir grup canı sıkılmış insan.
+      </p>
+    </section>
+    <section id="events">
+      <h2>Etkinlikler</h2>
+      <ul>
+        <li>Açık Hack Gecesi - Her Carşamba 19:00</li>
+        <li>Linux Atolyesi - 15 Ağustos 18:00</li>
+        <li>Elektronik 101 - 22 Ağustos 17:00</li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>İletişim</h2>
+      <p>
+        Email: <a style="color: var(--link-color);" href="mailto:info@cartc.org">info@cartcaurt.org</a><br />
+        Adres: 132 Freedom Street, Eskişehir
+      </p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 essociete. CC BY-ND 4.0
+  </footer>
+</body>
+
+</html>
