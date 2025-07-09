@@ -1,2 +1,2 @@
 # essociete-web
-essociete website
+Website of ESsociete
