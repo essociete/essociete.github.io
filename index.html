@@ -60,25 +60,24 @@
     .logo-container {
       padding-top: 1rem;
       padding-bottom: 0.3rem;
-      text-align: left;
-      /* Logo now left-aligned */
     }
 
     .logo-container img {
-      width: 120px;
-      max-width: 120px;
+      width: 90vw;
+      /* Mobilde geniş, kenarlarda boşluk */
+      max-width: 600px;
+      /* Çok büyük ekranlarda sınır */
       height: auto;
       image-rendering: pixelated;
       display: block;
-      margin: 0;
-      /* Sol hizalı ve küçük */
+      margin: 0 auto;
+      /* Ortala */
     }
 
     @media (min-width: 768px) {
       .logo-container img {
-        width: 120px;
-        max-width: 120px;
-        /* Masaüstünde de küçük ve sol hizalı */
+        width: 40vw;
+        /* Tablet ve masaüstünde daha dar */
       }
     }
 
