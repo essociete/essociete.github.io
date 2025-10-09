@@ -18,153 +18,7 @@
 
   <meta name="description" content="Eski topraklara dağılmış meraklı bilinçlerin koleksiyonu. Great Ershen'in revize ettiği kutsal nehir ve çevresinde kurulmuş bir topluluk. Fiziki birlik, fikri çokluk. Hacker kümesi." />
 
-  <meta name="author" content="ESsociete" />
-
-  <link rel="canonical" href="http://essociete.org/" />
-
-  <meta property="og:title" content="ESsociete" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://essociete.org/" />
-  <meta property="og:description" content="Eski topraklara dağılmış meraklı bilinçlerin koleksiyonu. Great Ershen'in revize ettiği kutsal nehir ve çevresinde kurulmuş bir topluluk. Fiziki birlik, fikri çokluk. Hacker kümesi." />
-  <meta property="og:image" content="images/logo.png" />
-  <meta property="og:site_name" content="ESsociete" />
-
-  <link rel="icon" sizes="any" href="images/icon.png">
-  
-  <title>ESsociete</title>
-  <style>
-    :root {
-      --bg-color: #111;
-      --text-color: #dddddd;
-      --accent-color: #ED904F;
-      --link-color: #004b45;
-    }
-
-    body {
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      font-family:Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
-      font-size: 16px;
-      margin: 0;
-      line-height: 1.6;
-
-      background-image:
-        linear-gradient(rgba(79, 237, 223, 0.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(79, 237, 223, 0.05) 1px, transparent 1px);
-      background-size: 20px 20px;
-    }
-
-    header,
-    footer {
-      padding: 1rem;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      color: var(--accent-color);
-      font-size: 2rem;
-    }
-
-    .logo-container {
-      padding-top: 1rem;
-      padding-bottom: 0.3rem;
-    }
-
-    .logo-container img {
-      width: 90vw;
-      max-width: 600px;
-      height: auto;
-      image-rendering: pixelated;
-      display: block;
-      margin: 0 auto;
-    }
-
-    @media (min-width: 768px) {
-      .logo-container img {
-        width: 40vw;
-      }
-    }
-
-
-
-    nav {
-      max-width: 750px;
-      background: transparent;
-      display: flex;
-      margin: auto;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-      padding: 0rem;
-    }
-
-    nav a {
-      color: var(--bg-color);
-      background: var(--accent-color);
-      font-weight: bold;
-      padding: 0rem 0.5rem;
-      text-decoration: none;
-    }
-
-    nav a:hover {
-      color: var(--link-color);
-      text-decoration: underline;
-    }
-
-  a {
-    color: #7AC57A;
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: #5FA35F;   
-    text-decoration: underline; 
-  }
-
-  cite {
-    color: rgba(255, 255, 255, 0.5); 
-    font-style: normal;              
-    font-size: 0.9em;                
-  }
-
-    main {
-      max-width: 700px;
-      margin: auto;
-      padding: 1.5rem;
-    }
-
-    section {
-      margin-bottom: 2rem;
-    }
-
-    h2 {
-      color: var(--accent-color);
-      border-bottom: 1px solid var(--accent-color);
-      padding-bottom: 0.3rem;
-    }
-
-    ul {
-      list-style: square;
-      padding-left: 1.2rem;
-    }
-
-    footer {
-      font-size: 0.9rem;
-      color: #999;
-    }
-
-    @media (max-width: 600px) {
-      body {
-        font-size: 14px;
-      }
-
-      main {
-        max-width: 90%;
-        padding: 1rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -174,15 +28,15 @@
       <img src="images/logo.png" alt="ASCII Logo">
   </header>
   <nav>
-    <a href="#about">Hakkında</a>
+    <a href="index.html">Ana Sayfa</a>
     <a href="#events">Etkinlikler</a>
+    <a href="#katil">Katıl</a>
     <a href="#contact">İletişim</a>
-    <a hreg="#images">Resimler</a>
-    <a href="#music">Müzik</a>
+    <a href="multimedia.html">Multimedya</a>
   </nav>
   <main>
     <section id="about">
-      <h2>Essociete?</h2>
+      <h2>ESsociete?</h2>
       <p>
          Eski topraklara dağılmış meraklı bilinçlerin koleksiyonu. Great Ershen'in revize ettiği kutsal nehir ve çevresinde kurulmuş bir topluluk. Fiziki birlik, fikri çokluk. Hacker kümesi.
       </p>
@@ -203,10 +57,21 @@
       </ul>
     </section>
     <section id="contact">
-      <h2>İletişim</h2>
+    <section id="katil">
+      <h2>Katıl</h2>
       <p>
-        Email: <a style="color: var(--link-color);" href="mailto:essociete26@gmail.com">essociete26@gmail.com</a><br />
-        Adres: null
+          İlgini çekti ve ESsociete üyesi olmak istiyorsan aşağıdaki formu kullanabilirsin. Topluluğumuz herhangi bir üst organizasyona bağlı değildir.
+        ve gönüllülük esasına dayanır. Katılım için herhangi bir ücret talep edilmez.
+      </p>
+      <div style="text-align:center; margin-top:1rem;">
+        <a href="" target="_blank" style="background: var(--accent-color); color: var(--bg-color); font-weight: bold; padding: 0.5rem 1.2rem; text-decoration: none; display: inline-block; font-size: 1rem;">Katıl Formu</a>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>İletişim</h2>
+      <p style="text-indent: 0;">
+        Email: <a style="color: #7AC57A;" href="mailto:contact@essociete.org">contact@essociete.org</a><br />
+        Adres: Eskişehir, Türkiye
       </p>
     </section>
   </main>

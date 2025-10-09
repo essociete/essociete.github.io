@@ -1,0 +1,135 @@
+/* style.css - ESsociete site stilleri */
+:root {
+  --bg-color: #111;
+  --text-color: #dddddd;
+  --accent-color: #ED904F;
+  --link-color: #004b45;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family:Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.6;
+  background-image:
+    linear-gradient(rgba(79, 237, 223, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(79, 237, 223, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+header,
+footer {
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  color: var(--accent-color);
+  font-size: 2rem;
+}
+
+.logo-container {
+  padding-top: 1rem;
+  padding-bottom: 0.3rem;
+}
+
+.logo-container img {
+  width: 90vw;
+  max-width: 600px;
+  height: auto;
+  image-rendering: pixelated;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .logo-container img {
+    width: 40vw;
+  }
+}
+
+nav {
+  max-width: 750px;
+  background: transparent;
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0rem;
+}
+
+nav a {
+  color: var(--bg-color);
+  background: var(--accent-color);
+  font-weight: bold;
+  padding: 0rem 0.5rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--text-color);
+    background-color: #bd733f ;
+    text-decoration: none;
+}
+
+a {
+  color: #7AC57A;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #5FA35F;   
+  text-decoration: underline; 
+}
+
+cite {
+  color: rgba(255, 255, 255, 0.5); 
+  font-style: normal;              
+  font-size: 0.9em;                
+}
+
+main {
+  max-width: 700px;
+  margin: auto;
+  padding: 1.5rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  color: var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+  padding-bottom: 0.2rem;
+  margin-bottom: 0rem;
+}
+
+p {
+  text-indent: 2em;
+}
+
+ul {
+  list-style: square;
+  padding-left: 1.2rem;
+}
+
+footer {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  main {
+    max-width: 90%;
+    padding: 1rem;
+  }
+}
